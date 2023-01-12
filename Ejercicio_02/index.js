@@ -11,6 +11,7 @@ const usuarioSchema = new mongoose.Schema({
 })
 const usuarioModel = mongoose.model('usuarios', usuarioSchema)
 
+// Configurar mongoose para no mostrar warnings de protocolas deprecados
 mongoose.set('strictQuery', false);
 
 // Conectarse a la base de datos
